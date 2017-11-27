@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="it.learning.application.scenes.CreateTodoSceneController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <HBox alignment="CENTER"
+          maxWidth="Infinity"
+          maxHeight="Infinity"
+          AnchorPane.bottomAnchor="0"
+          AnchorPane.leftAnchor="0"
+          AnchorPane.rightAnchor="0"
+          AnchorPane.topAnchor="0">
+        <VBox spacing="5">
+            <children>
+                <Label text="Title" maxWidth="Infinity"></Label>
+                <TextField fx:id="titleTextField" maxWidth="Infinity"></TextField>
+
+                <Label text="Contents" maxWidth="Infinity"></Label>
+                <TextArea fx:id="contentsTextArea" maxWidth="Infinity"></TextArea>
+
+                <HBox spacing="10" alignment="CENTER_RIGHT">
+                    <Button text="Save" onMouseClicked="#onSaveAction"></Button>
+                    <Button text="Cancel" onMouseClicked="#onCancelAction"></Button>
+                </HBox>
+                <Label></Label>
+            </children>
+        </VBox>
+    </HBox>
+
+</AnchorPane>

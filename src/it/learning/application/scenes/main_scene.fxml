@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.learning.application.scenes.MainSceneController" >
+    <children>
+        <fx:include fx:id="listScene"
+                    source="list_scene.fxml"
+                    VBox.vgrow="ALWAYS"/>
+
+        <Button onAction="#showCreateScene" text="Create"
+                VBox.vgrow="NEVER"
+                maxWidth="Infinity"/>
+
+    </children>
+</VBox>
